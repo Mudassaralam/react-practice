@@ -1,0 +1,72 @@
+
+
+  #container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+  }
+
+.main-div{
+  width: 100px;
+  height: 100px;
+  /* background-color: aqua; */
+  /* background: #270F34;  */
+  contain: content;
+  overflow: clip;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  border-radius: 50%;
+  background-image: linear-gradient(
+        -45deg, 
+        rgba(59,173,227,1) 0%, 
+        rgba(87,111,230,1) 25%, 
+        rgba(152,68,183,1) 51%, 
+        rgba(255,53,127,1) 100%
+  );  
+  animation: AnimateBG 20s ease infinite;
+}
+.sec-div{
+  width: 80px;
+  height: 80px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+
+
+
+@keyframes AnimateBG { 
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+#button{
+  border: none;
+  color: white;
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-image: linear-gradient(
+    -45deg, 
+    rgba(59,173,227,1) 0%, 
+    rgba(87,111,230,1) 25%, 
+    rgba(152,68,183,1) 51%, 
+    rgba(255,53,127,1) 100%
+);  
+animation: AnimateBG 20s ease infinite;
+
+}
